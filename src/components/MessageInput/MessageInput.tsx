@@ -1,6 +1,6 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUpLong, faFaceSmile, faK } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUpLong } from '@fortawesome/free-solid-svg-icons'
 
 import style from '../../StyleModules/MessageInput.module.scss'
 
