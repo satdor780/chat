@@ -1,0 +1,39 @@
+.item{
+    display: flex;
+    // margin-bottom: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .5s;
+    border-radius: 12px;
+    .ava{
+      @apply w-14 h-14 rounded-full mr-4 overflow-hidden
+    }
+    .user__info{
+        strong{
+            @apply text-[18px] font-medium
+        }
+        span{
+            display: block;
+        }
+    }
+    .info{
+        margin-left: auto;
+        span{
+            @apply text-sm
+        }
+        .notifications{
+            @apply bg-red rounded-full text-sm w-6 h-6 flex justify-center items-center text-white font-medium ml-auto mt-2
+        }
+    }
+  }
+
+.item:hover{
+    // width: 110%;
+    // background: #fff;
+    // transform: scale(1.05);
+    // border-bottom: 1px solid #000;
+    // border-top: 1px solid #000;
+    // padding: 10px 0;
+    background: #8774e1;
+    color: #fff;
+}

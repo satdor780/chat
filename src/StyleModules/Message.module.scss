@@ -1,0 +1,17 @@
+.message{
+    @apply max-w-[300px] mb-3;
+    .author{
+        @apply w-8 h-8 rounded-full mr-4 overflow-hidden mt-3
+    }
+    .message__text{
+        // background: #8DDBE0;
+        @apply p-2 pl-4 rounded-2xl text-white bg-blue
+    }
+}
+
+.message:first-child{
+    margin-left: auto;
+    .author{
+        @apply ml-auto
+    }
+}

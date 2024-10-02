@@ -1,0 +1,13 @@
+
+.input {
+    @apply flex items-center relative;
+    input{
+        @apply py-3 px-5 pr-16 bg-white rounded-xl w-full outline-0 leading-4
+    }
+    button{
+        @apply rotate-90 text-2xl;
+        color: #8774e1;
+        position: absolute;
+        right: 20px;
+    }
+}

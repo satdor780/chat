@@ -1,0 +1,15 @@
+.chat__container{
+    @apply col-span-7 flex flex-col justify-between;
+    .chat{
+        @apply max-h-[70vh] overflow-scroll relative ;
+        
+    }
+    // .chat:before{
+    //     content: '';
+    //     @apply block w-full h-0.5 bg-blue bottom-2 fixed;
+
+    // }
+    .chat::-webkit-scrollbar {
+        display: none;
+    }
+}
