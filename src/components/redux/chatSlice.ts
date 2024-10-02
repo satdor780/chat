@@ -13,13 +13,13 @@ const initialState: users = {
     data: {
         id: 144,
         name: 'ooes',
-        profileImage: '/assets/images/ava.jpg',
+        profileImage: '/assets/ava-VVbPmGVc.jpg',
         chatList: [
             {
                 chatId: 0,
                 interviewId: 345,
                 interviewName: 'oo',
-                interviewProfileImage: '/assets/images/ava.jpg',
+                interviewProfileImage: '/assets/ava-VVbPmGVc.jpg',
                 messageList: [
                     {
                         messageId: 34,
@@ -41,7 +41,7 @@ const initialState: users = {
                 chatId: 1,
                 interviewId: 222,
                 interviewName: 'ooes',
-                interviewProfileImage: '/assets/images/ava.jpg',
+                interviewProfileImage: '/assets/ava-VVbPmGVc.jpg',
                 messageList: [
                     {
                         messageId: 34,
