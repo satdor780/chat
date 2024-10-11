@@ -9,7 +9,7 @@
     }
 }
 
-.message:first-child{
+.message.author{
     margin-left: auto;
     .author{
         @apply ml-auto

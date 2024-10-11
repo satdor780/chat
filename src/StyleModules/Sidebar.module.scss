@@ -2,6 +2,12 @@
     @apply col-span-3 flex flex-col;
 }
 
+@media (max-width: 850px){
+    .sidebar{
+        @apply col-span-4;
+    }
+}
+
 
 // .sidebar h1{
 

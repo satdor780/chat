@@ -11,7 +11,7 @@ interface MessageProps {
 const Message: React.FC<MessageProps> = ({content, authorImg, isAuthor}) => {
     return(
         <>
-            <div className={style.message}>
+            <div className={!isAuthor ? style.message + ' ' + style.author: style.message} >
                 <div className={style.message__text}>
                     <p>{content}</p>
                 </div>

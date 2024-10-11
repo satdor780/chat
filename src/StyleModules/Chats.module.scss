@@ -2,3 +2,16 @@
     // @apply col-span-7
     @apply bg-white rounded-3xl col-span-3 py-3 flex-1;
 }
+
+
+.search{
+    padding: 0 15px;
+}
+
+.search input{
+    @apply block px-3 py-2 w-full outline-none rounded-xl mb-2 bg-slate-500 text-white
+}
+
+.emptySearch{
+    @apply text-center block text-xl font-medium
+}

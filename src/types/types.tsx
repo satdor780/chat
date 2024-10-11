@@ -14,6 +14,7 @@ interface Chat {
     interviewId: number;
     interviewName: string,
     interviewProfileImage: string,
+    unread: number,
     messageList: Message[];
 }
 

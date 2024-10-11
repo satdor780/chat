@@ -8,7 +8,8 @@ export const store = configureStore({
     // comments: commentsReducer,
     // users: usersReducer
     chat: chatSlice
-  }
+  },
+  devTools: true,
 })
 
 // Get the type of our store variable

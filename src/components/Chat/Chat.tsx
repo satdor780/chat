@@ -4,9 +4,15 @@ import ProfileItem from '../ProfileItem/ProfileItem'
 
 import ava from '../../assets/images/ava.jpg'
 import MessageInput from '../MessageInput/MessageInput'
-import { useAppSelector } from '../../hooks'
+import { useAppDispatch, useAppSelector } from '../../hooks'
+import { useEffect } from 'react'
+import { unreadMess } from '../redux/chatSlice'
 
 const Chat: React.FC = () => {
+
+    const dispatch = useAppDispatch()
+    // console.log(state)
+    const currentUser = useAppSelector(state => state.chat.data?.id)
 
     const activeChat = useAppSelector(state => state.chat.activeChat)
 
@@ -17,6 +23,10 @@ const Chat: React.FC = () => {
     let activeMessages = messages?.filter((chat) => chat.chatId == activeChat)
 
     const currentMess = activeMessages && activeMessages[0].messageList
+
+    useEffect(() => {
+        dispatch(unreadMess())
+    }, [activeChat])
 
     // console.log(activeMessages[0])
 
@@ -35,7 +45,7 @@ const Chat: React.FC = () => {
 
                 <div className={style.chat}>
                     {currentMess && currentMess.map((mess) => (
-                        <Message key={mess.messageId} content={mess.content} authorImg={ava} isAuthor={true}/>
+                        <Message key={mess.messageId} content={mess.content} authorImg={ava} isAuthor={mess.senderId !== currentUser}/>
                     ))}
                     {/* <Message content='lorem ipsum' authorImg={ava}/>
                     <Message content='xuet qima' authorImg={ava} isAuthor={true}/>
@@ -53,7 +63,6 @@ const Chat: React.FC = () => {
 
                 </div>
                 <MessageInput />
-
             </div>
         </>
     )
